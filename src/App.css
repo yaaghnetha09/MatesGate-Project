@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 99.992%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+body {
+  background-color: white;
+  position: relative;
+  font-family:'Times New Roman', Times, serif
+}
+
+#content {
+  font-weight: 500;
+  margin-top: 10%;
+  padding-top: 20%;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background: linear-gradient(to left, (255, 255, 255, 0.15));
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* h1{
+  /* font-family: Barriecito; */
+/* } */ 
+
+.header-scrolled {
+  position: fixed;
+  top: -0.4rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+  z-index: 999;
+  transition: 0.3s all ease-in-out;
+}
+
+.button1 {
+  /* top:200px; */
+  height: 33px;
+  width: 70px;
+  /* bottom:60px; */
+  float: right;
+  margin: 10px;
+  /* margin-right:40px; */
+  padding: 0;
+  font-size: large;
+  border-radius: 10%;
+  background-color: lightblue;
+  font-family: "Ubuntu", sans-serif;
+}
+.button1:hover {
+  /* border:3px solid black; */
+  background-color: rgb(136, 202, 224);
+}
+
+.button2 {
+  /* top:200px; */
+  height: 33px;
+  width: 70px;
+  /* bottom:60px; */
+  float: right;
+  /* margin:10px; */
+  /* margin-right:40px; */
+  padding: 0;
+  font-size: large;
+  border-radius: 10%;
+  background-color: lightblue;
+  font-family: "Ubuntu", sans-serif;
+}
+.button2:hover {
+  /* border:3px solid black; */
+  background-color: rgb(136, 202, 224);
+}
+
+
+
+
+
+
+.row {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+
+.col {
+  width: 25%;
+  padding: 5px;
+}
+
+.col h3,
+.col h2 {
+  margin-bottom: 12px;
+  width: fit-content;
+  position: relative;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid white;
+  margin: 0px 0px;
+}
+
+.email {
+  width: 100%;
+  background-color: transparent;
+  margin-left: 5px;
+  border: none;
+}
+
+.hr1 {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.copyright {
+  text-align: left;
+  bottom: 3px;
+}

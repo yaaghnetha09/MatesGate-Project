@@ -1,0 +1,243 @@
+.navbar {
+  padding: 0 px;
+}
+
+.navbar-brand {
+  text-decoration: solid;
+  text-decoration-color: black;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.navbar .container image {
+  height: 100%;
+  margin-right: 10px;
+}
+
+.nav .navbar {
+  /* background: rgb(51,51,51);
+  background: linear-gradient(90deg, rgba(51,51,51,1) 18%, rgba(51,156,199,1) 76%, rgba(122,210,227,1) 100%); */
+  background: rgb(46, 44, 44);
+  /* background-image: linear-gradient(to right, rgb(46, 44, 44), rgb(50, 43, 24)); */
+
+  /* background: linear-gradient(
+    90deg,
+    rgb(48, 54, 55) 13%,
+    rgb(105, 181, 210) 66%,
+    rgb(136, 233, 253) 100%
+  ); */
+  /* background: linear-gradient(
+    90deg,
+    rgb(45, 30, 15) 13%,
+    rgb(170, 131, 92) 56%,
+    rgb(229, 201, 172) 100%
+  ); */
+  padding: 0px;
+}
+
+
+
+h5 {
+  margin-top: 6px;
+  color: #adaca8;
+}
+
+.dropbtn {
+  background-color: #e0d8b0;
+  color: Black;
+  margin: 12px;
+  /* margin-right:;  */
+  /* top:px; */
+  /* height:105px; */
+  padding: 0.8vw 1vw;
+  /* margin-top: -15px; */
+  font-size: 1.3vw;
+  border: none;
+  border-radius: 5%;
+
+  font-family: "roboto-condensed", sans-serif;
+  /* border-radius:10px; */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /* background-color: red; */
+  min-width: 160px;
+  border: 1px solid black;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-item {
+  background-color: rgb(232, 220, 220);
+  font-size: smaller;
+  font-weight: 500;
+}
+.dropdown-item:active {
+  background-color: #ddd;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* height:100px; */
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #aca688;
+}
+/* form.example{
+    width:100px;
+  } */
+.example input[type="text"] {
+  padding: 9px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 9px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+/* form.example button:hover {
+  background: #0b7dda;
+} */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.logo.i {
+  border-radius: 50%;
+  color: aliceblue;
+  background-color: white;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 15px; /* Adjust the border-radius to control the curve of the corners */
+  padding: 5px;
+  /* Adding a subtle box shadow for depth */
+  position: relative; /* Needed for absolute positioning of child elements */
+  z-index: 0;
+}
+
+.logsign {
+  display: flex;
+  width: 13%;
+}
+
+.logsign .btn {
+  color: black;
+  background-color: transparent;
+  height: 33px;
+  padding: 5px;
+  margin-top: -9px;
+  padding-bottom: 2px;
+}
+
+.logsign .btn.btn-transparent:hover {
+  background-color: rgb(82, 177, 177); /* Change the background color */
+  /* Add any other styles you want to apply on hover */
+}
+
+.btn {
+  float: right;
+  padding: 5px;
+  margin-top: 2px;
+}
+
+/* Add animation to dropdown */
+.dropdown-menu {
+  display: none;
+  animation: fadeInDown 0.5s ease forwards;
+  background-color: rgb(232, 220, 220);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Add hover effect to dropdown toggle */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: large;
+}

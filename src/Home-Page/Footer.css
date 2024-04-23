@@ -1,0 +1,28 @@
+.footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    /* bottom: 0; */
+    /* position: absolute; */
+    background: rgb(46, 44, 44);
+    color: rgb(172, 172, 166);
+    /* border-top-right-radius: 125px;  */
+    padding: 10px 20px;
+    /* height: 100%; */
+    /* height:px; */
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .logo i {
+    font-size: 1.2rem; /* Adjust size as needed */
+    margin: 0 0px; /* Adjust spacing as needed */
+    color: rgb(172, 172, 166); /* Set the color to white */
+  }
+
+  .col li a {
+    text-decoration: none;
+    color: rgb(172, 172, 166);
+  }
+  .col h2{
+    color:rgb(172, 172, 166);
+  }
