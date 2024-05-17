@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 80px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.left {
+  flex: 1 1 40%;
+  background-color: #fff;
+  padding: 20px;
+  /* margin-left: 40px; */
+  box-sizing: border-box;
+}
+
+.right {
+  flex: 1 1 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: space-between;
+}
+
+.cardd {
+  display: flex;
+  flex-direction: row;
+  /* flex: 1 1 calc(33.333% - 40px); */
+  /* display: flex; */
+  /* flex-wrap: wrap; Allow items to wrap to the next line */
+  gap: 0px;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  margin-left: 60px;
+  border: 1px solid #d7d2d2;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.cardd img {
+  width: 200px;
+  height: 200px;
+  /* border-radius: 50%; */
+  margin-right: 10px;
+}
+
+/* .worker-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+} */
+
+.worker-details .name {
+  margin-top: 5px;
+  margin-left: 30px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.worker-details p {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.ratings {
+  margin-bottom: 10px;
+  font-size: 24px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+}
+
+.box {
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.box h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.box ul {
+  padding-left: 25px;
+}
+
+.box ul li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.actions {
+  margin-top: 10px;
+  /* align-items: center;  */
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+button {
+  margin-left: 220px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+  background-color: gold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+}
+
+.book {
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.card:hover {
+  border-color: #d7d2d2; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Add a shadow on hover */
+}
+
+button:hover {
+  background-color: #ff0; /* Change background color on hover */
+  color: #333; /* Change text color on hover */
+}
+
+.num-ratings {
+  margin-left: 0px;
+  font-size: 16px;
+  color: #777;
+}
+
+.bookings {
+  font-size: 20px;
+}
+
+.ratings-worker {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .left {
+    flex: 1 1 30%;
+  }
+
+  .right {
+    flex: 1 1 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .left {
+    flex: 1 1 25%;
+  }
+
+  .right {
+    flex: 1 1 75%;
+  }
+}

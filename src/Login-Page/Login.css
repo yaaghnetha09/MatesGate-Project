@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
-  /* body{
+/* body{
     background-color: #7c6803;
   } */
+
+body {
+  margin-top: -80px;
+}
 .link {
   color: #fefee2;
 }
@@ -93,7 +97,7 @@ h6 span {
   position: absolute;
   border-radius: 6px;
   -webkit-transform-style: preserve-3d; /* For WebKit browsers */
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
 }
 .card-back {
   transform: rotateY(180deg);
@@ -176,9 +180,8 @@ h6 span {
   box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
 }
 
-
-#sideImage{
-  color:white;
+#sideImage {
+  color: white;
   align-items: center;
   justify-content: center;
 }

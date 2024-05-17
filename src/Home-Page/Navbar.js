@@ -75,12 +75,12 @@ export default function Navbar() {
                 <ul className="navbar-nav justify-content-start flex-grow-1 ps-4 pe-0 ms-0">
                   <li className="nav-item mx-1">
                     <a className="nav-link mt-1" href="#home">
-                      <Link>Home</Link>
+                      <Link to="/">Home</Link>
                     </a>
                   </li>
                   <li className="nav-item mx-1">
                     <a className="nav-link mt-1" href="#about">
-                    <Link>About Us</Link>
+                      <Link to ="/aboutus">About Us</Link>
                     </a>
                   </li>
                   <div class="btn-group">
@@ -93,25 +93,31 @@ export default function Navbar() {
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="#homeservices">
-                          Home Services
+                        <a class="dropdown-item " href="#services">
+                          <Link to="/services" style={{ color: "black" }}>
+                            Home Services
+                          </Link>
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#tourists">
-                          Tourist Hotspots
+                          <Link to="/tourist" style={{ color: "black" }}>
+                            Tourist Hotspots
+                          </Link>
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#healthcare">
-                          Healthcare Access
+                          <Link to="/healthcare" style={{ color: "black" }}>
+                            Healthcare Access
+                          </Link>
                         </a>
                       </li>
                     </ul>
                   </div>
                   <li className="nav-item mx-1 me-4">
                     <a className="nav-link mt-1" href="#contact">
-                    <Link>Contact Us</Link>
+                      <Link to="/contactus">Contact Us</Link>
                     </a>
                   </li>
                 </ul>

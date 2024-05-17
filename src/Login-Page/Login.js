@@ -7,24 +7,23 @@ import { useNavigate } from "react-router-dom";
 export default function Login() {
   let navigate = useNavigate();
   const [user2, setUser2] = useState({
-    email: "",
-    password: ""
+    username2: "",
+    password2: ""
   });
 
   const [user, setUser] = useState({
     username: "",
     phoneno: "",
     email: "",
-    password: ""
+    password: "",
+    role: ""
   });
 
-  const { email2, password2 } = user2;
-  const { username, phoneno, email, password } = user;
+  const { username2, password2 } = user2;
+  const { username, phoneno, email, password, role } = user;
 
   const onInput2 = (e) => {
     setUser2({ ...user2, [e.target.name]: e.target.value });
-
-    // console.log(user)
   };
 
   const onInput = (e) => {
@@ -34,7 +33,7 @@ export default function Login() {
   const onsubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/save", user);
+      const res = await axios.post("http://localhost:8080/api/register", user);
       navigate("/");
     } catch (err) {
       console.log(err);
@@ -44,7 +43,7 @@ export default function Login() {
   const onsubmit2 = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/login", user2);
+      const res = await axios.post("http://localhost:8080/api/login", user2);
       navigate("/");
     } catch (err) {
       console.log(err);
@@ -83,25 +82,24 @@ export default function Login() {
                   <div className="card-front">
                     <div className="center-wrap">
                       <div className="section text-center">
-                        <h4 className="mb-4 pb-3">Log In</h4>
+                        {/* <h4 className="mb-4 pb-3">Log In</h4> */}
                         <form
-                            onSubmit={(e)=>{
-                                onsubmit2(e);
-                            }}
+                          // onSubmit={(e) => {
+                          //   onsubmit2(e);
+                          // }}
                           style={{
                             display: "flex",
                             flexDirection: "column",
                             width: "100%"
                           }}
-                          
                         >
                           <div className="form-group">
                             <input
-                              type="email"
+                              type="text"
                               className="form-style"
-                              name="email2"
-                              placeholder="Email"
-                              value={email2}
+                              name="username2"
+                              placeholder="UserName"
+                              value={username2}
                               onChange={(e) => {
                                 onInput2(e);
                               }}
@@ -124,7 +122,7 @@ export default function Login() {
                           <button
                             type="submit"
                             className="btn mt-4"
-                            
+                            onClick={onsubmit2}
                           >
                             Login
                           </button>
@@ -139,7 +137,6 @@ export default function Login() {
                   <div className="card-back">
                     <div className="center-wrap">
                       <div className="section text-center">
-                        <h4 className="mb-3 pb-2">Sign Up</h4>
                         <form
                           style={{
                             display: "flex",
@@ -199,9 +196,24 @@ export default function Login() {
                             />
                             <i className="input-icon uil uil-lock-alt"></i>
                           </div>
+                          {/* Role Selection */}
+                          <div className="form-group mt-1">
+                            <select
+                              className="form-style"
+                              name="role"
+                              value={role}
+                              onChange={(e) => {
+                                onInput(e);
+                              }}
+                            >
+                              <option value="">Select Role</option>
+                              <option value="USER">User</option>
+                              <option value="WORK">Worker</option>
+                            </select>
+                          </div>
                           <button
                             type="submit"
-                            className="btn mt-4"
+                            className="btn mt-2"
                             onClick={onsubmit}
                           >
                             Register
