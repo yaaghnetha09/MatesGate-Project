@@ -12,6 +12,7 @@ import Services from "./Services/Services.jsx";
 import WorkerDetails from "./Worker-Page/worker.js";
 import ContactUs from "./Contact-Us/ContactUs.js";
 import AboutUs from "./About-Us/AboutUs.js";
+import Tourist from "./Tourist-Page/tourist.js";
 
 function App() {
   return (
@@ -71,6 +72,17 @@ function App() {
               <>
                 <Navbar />
                 <AboutUs />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="tourist"
+            exact
+            element={
+              <>
+                <Navbar />
+                <Tourist />
                 <Footer />
               </>
             }
